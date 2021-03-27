@@ -1,9 +1,5 @@
 package com.example.supermarket.core.order.converter;
 
-import com.example.supermarket.core.address.Addresss;
-import com.example.supermarket.core.address.web.AddresssView;
-import com.example.supermarket.core.customer.Customer;
-import com.example.supermarket.core.customer.web.CustomerView;
 import com.example.supermarket.core.order.Order;
 import com.example.supermarket.core.order.web.OrderView;
 import com.example.supermarket.core.product.Product;
@@ -27,7 +23,10 @@ public class OrderViewConverter implements Converter<Order, OrderView> {
     @Override
     public OrderView convert(@Nullable Order order) {
         OrderView view=new OrderView();
-        view.setPaidfor();
+        view.setId(order.getId());
+        view.setPaidfor(order.getPaidfor());
+        view.setdDate(order.getdDate());
+        view.setCustomer(order.getCustomer());
         Set<ProductView> views = new HashSet<>();
         Set<Product> products= order.getProducts();
         products.forEach(product -> {

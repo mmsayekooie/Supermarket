@@ -1,4 +1,8 @@
 package com.example.supermarket.core.date;
 
-public interface DDateRepo {
+import org.springframework.data.jpa.repository.JpaRepository;
+import org.springframework.stereotype.Repository;
+
+@Repository
+public interface DDateRepo extends JpaRepository<DDate,Long>{
 }
