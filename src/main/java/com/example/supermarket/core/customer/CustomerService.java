@@ -46,7 +46,7 @@ public class CustomerService {
         return customerViewConverter.convert(customer);
     }
 
-    public Page<CustomerView> findAllPlayer(Pageable pageable) {
+    public Page<CustomerView> findAllCustomer(Pageable pageable) {
         Page<Customer> customers = customerRepo.findAll(pageable);
         List<CustomerView> customerViews = new ArrayList<>();
         customers.forEach(customer -> {

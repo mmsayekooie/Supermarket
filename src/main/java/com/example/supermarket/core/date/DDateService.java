@@ -1,5 +1,7 @@
 package com.example.supermarket.core.date;
 
+import com.example.supermarket.core.customer.Customer;
+import com.example.supermarket.core.customer.web.CustomerView;
 import com.example.supermarket.core.date.converter.DDateViewConverter;
 import com.example.supermarket.core.date.web.DDateBaseReq;
 import com.example.supermarket.core.date.web.DDateView;
@@ -30,6 +32,11 @@ public class DDateService {
     public DDate findDateOrThrow(Long id) {
         return dDateRepo.findById(id)
                 .orElseThrow(() -> new EntityNotFoundException(messageUtil.getMessage("Date.NotFound", id)));
+    }
+
+    public DDateView getDate(Long id) {
+        DDate dDate = findDateOrThrow(id);
+        return dDateViewConverter.convert(dDate);
     }
 
     public Page<DDateView> findAllDates(Pageable pageable){
