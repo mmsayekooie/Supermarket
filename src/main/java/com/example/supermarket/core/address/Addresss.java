@@ -2,6 +2,8 @@ package com.example.supermarket.core.address;
 
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+
 @Entity
 @Table(name = "sp_address")
 public class Addresss {

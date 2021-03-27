@@ -1,17 +1,11 @@
-package com.example.supermarket.core.date;
+package com.example.supermarket.core.date.web;
 
-import javax.persistence.*;
+
 import java.util.Date;
 
-@Entity
-@Table(name = "sp_date")
-public class DDate {
-    @Id
-    @GeneratedValue(strategy = GenerationType.AUTO)
+public class DDateView {
     private Long id;
-    @Column(name = "date")
     private Date date;
-    @Column(name = "dayOfWeek")
     private String dayOfWeek;
 
     public Long getId() {

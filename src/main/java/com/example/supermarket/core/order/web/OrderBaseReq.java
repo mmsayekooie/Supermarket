@@ -1,12 +1,17 @@
 package com.example.supermarket.core.order.web;
 
 import com.example.supermarket.base.BaseRequest;
+import com.example.supermarket.core.customer.Customer;
+import com.example.supermarket.core.date.DDate;
+import com.example.supermarket.core.product.Product;
 
 import javax.validation.Valid;
 import javax.validation.constraints.NotEmpty;
 import javax.validation.constraints.NotNull;
 import java.io.Serializable;
+import java.util.HashSet;
 import java.util.List;
+import java.util.Set;
 
 public class OrderBaseReq extends BaseRequest implements Serializable {
     private String paidfor;

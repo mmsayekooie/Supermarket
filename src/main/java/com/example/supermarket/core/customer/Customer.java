@@ -3,6 +3,7 @@ package com.example.supermarket.core.customer;
 import com.example.supermarket.core.address.Addresss;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 import java.util.HashSet;

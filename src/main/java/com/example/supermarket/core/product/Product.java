@@ -3,6 +3,8 @@ package com.example.supermarket.core.product;
 import com.example.supermarket.core.supplier.Supplier;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
+
 @Entity
 @Table(name = "sp_products")
 public class Product {

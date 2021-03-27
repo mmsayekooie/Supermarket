@@ -5,6 +5,7 @@ import com.example.supermarket.core.date.DDate;
 import com.example.supermarket.core.product.Product;
 import org.hibernate.annotations.GenericGenerator;
 
+import javax.persistence.*;
 import java.util.HashSet;
 import java.util.Set;
 
