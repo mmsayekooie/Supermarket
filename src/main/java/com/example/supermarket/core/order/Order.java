@@ -26,7 +26,7 @@ public class Order {
             }
     )
     @GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "sp_supplier_id_seq")
-    private long id;
+       private long id;
     @Column(name = "paidfor")
     private String paidfor;
     @ManyToMany(fetch = FetchType.LAZY, cascade = {CascadeType.ALL})
@@ -38,7 +38,7 @@ public class Order {
     @JoinColumn(name = "id_customer")
     private Customer customer;
     @ManyToOne(cascade=CascadeType.ALL)
-    @JoinColumn(name = "id_customer")
+    @JoinColumn(name = "id_Date")
     private DDate dDate;
 
     public long getId() {
