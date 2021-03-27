@@ -2,11 +2,9 @@ package com.example.supermarket.core.address.converter;
 
 import com.example.supermarket.core.address.Addresss;
 import com.example.supermarket.core.address.web.AddresssView;
+import org.springframework.core.convert.converter.Converter;
 import org.springframework.lang.Nullable;
 import org.springframework.stereotype.Component;
-
-import org.springframework.core.convert.converter.Converter;
-import java.lang.annotation.Annotation;
 
 @Component
 public class AddresssViewConverter implements Converter<Addresss, AddresssView> {

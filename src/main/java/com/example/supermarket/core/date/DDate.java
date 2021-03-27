@@ -1,6 +1,5 @@
 package com.example.supermarket.core.date;
 
-import javax.persistence.*;
 import java.util.Date;
 
 @Entity

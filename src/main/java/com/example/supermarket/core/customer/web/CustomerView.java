@@ -1,11 +1,8 @@
 package com.example.supermarket.core.customer.web;
 
-import com.example.supermarket.core.address.Addresss;
 import com.example.supermarket.core.address.web.AddresssView;
 import com.fasterxml.jackson.annotation.JsonFormat;
 
-import javax.persistence.*;
-import javax.validation.constraints.NotEmpty;
 import java.util.Date;
 import java.util.HashSet;
 import java.util.Set;
